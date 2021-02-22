@@ -1,0 +1,16 @@
+FUNCTION partition(arr : ARRAY_OF INTEGER, low, high : INTEGER) : INTEGER 
+VAR
+b,i,pivot : INTEGER;
+BEGIN
+pivot := arr[high]; 
+i := low-1;
+    FOR i FROM low TO high-1 DO
+        IF (arr[i] < pivot) THEN
+        i := i+1;
+        swap(arr[i],arr[i])
+    END_IF
+    END_FOR
+    swap(arr[b+1],arr[i])
+
+    RETURN b+1 ;
+END
